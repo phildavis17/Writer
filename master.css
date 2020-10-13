@@ -1,0 +1,41 @@
+*{
+    background-color: #303030;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    color: #404040;
+    text-align: center;
+    font-size: 2em;
+    font-family: roboto, sans-serif;
+    padding: .25em;
+}
+
+.title #words{
+    width: 8em;
+}
+
+
+
+.clock{
+    justify-content: center;
+}
+
+#entry{
+    width: 100%;
+    height: 80vh;
+    border-style: none;
+    font-family: roboto mono, serif;
+    font-size: 20px;
+    color: #909090;
+}
+
+#entry:focus{
+    border-style: hidden;
+    outline: none;
+}
+
+#entry::selection{
+    background: #AAA;
+}

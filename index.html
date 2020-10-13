@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Write</title>
+        <link rel="stylesheet" href="master.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <div class="title">
+            <div id="today" onclick="resTest()"></div>
+            <div class="clock" onclick="memTest()"> <span id="h"></span>:<span id="m"></span> </div>
+            <div id="words" onclick="localClear()">Words: <span id="wCount"></span></div>
+        </div>
+
+        <div class="text">
+            <textarea name="journalEntry" id="entry"
+            rows="10" cols="100" oninput="updateCount()"
+            placeholder="Click on the wordcount to save."autofocus></textarea>
+        </div>
+
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
